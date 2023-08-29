@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #4a90e2;
+      /* Updated background color */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      width: 350px;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    .input-group label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: #666;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-bottom: 2px solid #ddd;
+      background-color: transparent;
+      font-size: 16px;
+      color: #333;
+      transition: border-color 0.3s;
+    }
+
+    .input-group input:focus {
+      outline: none;
+      border-color: #007bff;
+    }
+
+    .login-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 12px;
+      width: 100%;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .login-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .message {
+      color: red;
+      display: none;
+    }
+    .success{
+      color: green;
+      display: none;
+    }
+  </style>
+  <title>Login Form</title>
+</head>
+
+<body>
+  <div class="login-container">
+    <h2 style="text-align: center; margin-bottom: 20px;">Login Form</h2>
+    <div class="input-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter your username">
+      <p class="message">Full name required</p>
+      <p class="success">Your data added sucessfully</p>
+    </div>
+    <div class="input-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password">
+    </div>
+    <div class="input-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email">
+    </div>
+    <div class="input-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number">
+    </div>
+    <button onclick = "addData()" class="login-btn">Login</button>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  #message{
+    color: red;
+    display: none;
+  }
+  #success{
+    color: green;
+    display: none;
+  }
+</style>
+<body>
+  <input type="text" id="fullName">
+  <p id="message">Full Name Required</p>
+  <p id="success">Your Data Added successfully</p>
+  <button onclick="submitData()">Add Data</button>
+  <script src="./script.js"></script>
+</body>
+</html> -->
+
